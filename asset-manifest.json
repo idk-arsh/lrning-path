@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/lrning-path/static/css/main.3760f5b9.css",
+    "main.js": "/lrning-path/static/js/main.1db65e24.js",
+    "static/js/453.6368381f.chunk.js": "/lrning-path/static/js/453.6368381f.chunk.js",
+    "static/media/Course Finder.png": "/lrning-path/static/media/Course Finder.d11b3374ad187227aac5.png",
+    "index.html": "/lrning-path/index.html",
+    "main.3760f5b9.css.map": "/lrning-path/static/css/main.3760f5b9.css.map",
+    "main.1db65e24.js.map": "/lrning-path/static/js/main.1db65e24.js.map",
+    "453.6368381f.chunk.js.map": "/lrning-path/static/js/453.6368381f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3760f5b9.css",
+    "static/js/main.1db65e24.js"
+  ]
+}
