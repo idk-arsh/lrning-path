@@ -1,0 +1,29 @@
+/* Courses.css */
+.course-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .course-item img {
+    max-width: 100%;
+    border-radius: 4px;
+  }
+  
+  .course-item h3 a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .course-item h3 a:hover {
+    text-decoration: underline;
+  }
+  
+  .course-item p {
+    color: #555;
+  }
+  
