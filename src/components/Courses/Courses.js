@@ -9,7 +9,7 @@ const Courses = ({ profileData, videos, setVideos }) => {
       try {
         const { title, duration } = profileData;
         if (!title) return;
-        const apiKey = 'AIzaSyACQXMBIax1QP8GCbVhqEsm8wJtzUhrr-M';
+        const apiKey = process.env.REACT_APP_YOUTUBE_API_KEY;
         const searchQuery = `${title} ${duration} weeks`;
         const youtubeResponse = await fetch(
           `https://www.googleapis.com/youtube/v3/search?part=snippet&q=${encodeURIComponent(searchQuery)}&type=video&maxResults=10&key=${apiKey}`
