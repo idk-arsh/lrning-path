@@ -1,0 +1,38 @@
+/* TeamMember.css */
+.team-member {
+    text-align: center;
+    margin: 20px;
+}
+
+.team-member-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.role {
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.description {
+    margin: 10px 0;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-links a {
+    color: #333;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: #0077b5; /* LinkedIn blue */
+}

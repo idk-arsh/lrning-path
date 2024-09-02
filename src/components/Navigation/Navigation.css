@@ -5,14 +5,21 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed; /* Keeps the nav fixed at the top */
+  top: 0; 
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Ensures nav stays above other content */
 }
 
 nav img {
   margin-right: 20px;
+  height: 50px; /* Adjusted to be more compact */
+  width: auto;
 }
 
 .nav-title {
-  font-size: 24px;
+  font-size: 30px; /* Reduced font size for compactness */
   font-weight: bold;
   margin-right: auto;
 }
@@ -20,7 +27,9 @@ nav img {
 nav ul {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 30px; /* Reduced gap to make it more compact */
+  margin: 0;
+  padding: 0;
 }
 
 nav ul li {
@@ -30,11 +39,11 @@ nav ul li {
 nav a {
   color: #fff;
   text-decoration: none;
-  padding: 10px 15px;
-  font-size: 18px;
+  padding: 12px 12px; /* Reduced padding for more compact design */
+  font-size: 16px; /* Slightly smaller font size */
+  border-radius: 3px; /* Slightly smaller border-radius */
 }
 
 nav a:hover {
   background-color: #575757;
-  border-radius: 5px;
 }

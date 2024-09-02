@@ -12,7 +12,7 @@ const Profile = ({ profileData, setProfileData }) => {
         },
         body: JSON.stringify({
           ...profileData,
-          cost: profileData.cost === 'true', // Convert to boolean here
+          cost: profileData.cost === 'true',
         }),
       });
       alert('Course data submitted successfully!');
@@ -28,7 +28,7 @@ const Profile = ({ profileData, setProfileData }) => {
 
   return (
     <div>
-      <h1>Select Course to begin with....</h1>
+      <h1>Hi {profileData.name}, Select Course to begin with....</h1>
       <form method='POST' onSubmit={handleSubmit}>
         <input
           type='text'
@@ -54,10 +54,16 @@ const Profile = ({ profileData, setProfileData }) => {
         </select>
         <br />
         <div className="note">
-                <p>
-                    Note: This Website is not modified for the paid services so right now you will only get the free service even if you click paid option.
-                </p>
-            </div>
+          {profileData.cost === "true" ? (
+            <p>
+              You've selected a paid course. Please note that this feature is currently under development, and all services are free for now.
+            </p>
+          ) : (
+            <p>
+              You've selected a free course. Enjoy your learning experience!
+            </p>
+          )}
+        </div>
         <button type='submit'>Submit</button>
       </form>
     </div>
